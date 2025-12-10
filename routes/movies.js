@@ -92,7 +92,7 @@ router.post("/delete",
 // Search by title
 router.get("/search/title", async (req, res) => {
     const q = req.query.q;
-    if (!q) return res.redirect("/movies"); // no query, redirect to movies
+    if (!q) return res.redirect("/movies"); 
 
     const movies = await Movie.find({ $text: { $search: q } });
     res.render("index", { title: `Search Results for "${q}"`, movies });
