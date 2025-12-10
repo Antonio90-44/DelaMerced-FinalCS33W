@@ -19,7 +19,7 @@ To start the page follow the next steps:
 
 Screenshots:
 
-![Home](images/Home.png)
+![Home](/images/Home.png)
 
 ![Delete](images/Delete.png)
 
