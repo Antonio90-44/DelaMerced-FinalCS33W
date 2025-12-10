@@ -1,3 +1,8 @@
+/*
+Movie.js
+Antonio De la Merced
+12/09/2025
+*/
 const express = require("express");
 const router = express.Router();
 const { body, validationResult } = require("express-validator");

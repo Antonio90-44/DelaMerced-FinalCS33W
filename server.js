@@ -1,7 +1,8 @@
 /*
  * server.js
- * FINAL TERM - Theatre Movie Database
+ * FINAL TERM - Movie recommendations
  * Antonio De la Merced
+ * 12/09/2025
  */
 
 const express = require("express");
