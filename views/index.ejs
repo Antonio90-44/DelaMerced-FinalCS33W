@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<h1><%= title %></h1>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Director</th>
+            <th>Duration</th>
+            <th>Edit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% movies.forEach(movie => { %>
+            <tr>
+                <td><%= movie.title %></td>
+                <td><%= movie.genre %></td>
+                <td><%= movie.director %></td>
+                <td><%= movie.duration %> min</td>
+                <td><a href="/movies/edit/<%= movie._id %>">Edit</a></td>
+            </tr>
+        <% }) %>
+    </tbody>
+</table>
+</body>
+</html>
+<%- include("partials/footer") %>

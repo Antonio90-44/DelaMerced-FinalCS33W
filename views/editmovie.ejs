@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+<body>
+    <h1>Edit Movie</h1>
+    <a class="back" href="/">Back to Home</a>
+
+
+
+    <form action="/movies/Edit/<%= movie._id %>" method="POST">
+        <label>Title:</label><input type="text" name="title" value="<%= movie.title %>"><br>
+        <label>Genre:</label><input type="text" name="genre" value="<%= movie.genre %>"><br>
+        <label>Director:</label><input type="text" name="director" value="<%= movie.director %>"><br>
+        <label>Duration (minutes):</label><input type="number" name="duration" value="<%= movie.duration %>"><br>
+        <button type="submit">Update Movie</button>
+    </form>
+</body>
+</html>
+<%- include("partials/footer") %>
