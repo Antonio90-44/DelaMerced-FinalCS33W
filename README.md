@@ -6,9 +6,11 @@
 Cinemerc was built with Express, Mongo and Ejs templates, it allows the user to add, delete, and edit the movies and also view the movie recommendations of my page for users, you can also search title, genre, directors and a small button on the right-top of the page to find movies longer than 2 hours.
 
 * User Guide.
-To start the page follow the next steps:
+To start the page follow the next steps on your terminal:
 1. Npm install
 2. node server.js
+3. The server will start running in port 3000
+4. Open http://localhost:3000
 
 * Tasks:
 1. Add a Movie: Click “Add New Movie” → fill out form → submit
